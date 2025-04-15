@@ -25,7 +25,7 @@ uv sync
 - `install_uv.sh` は一応用意されているが、`uv` インストールされているため動くか不明なスクリプト。
 - `execute.sh` は `job.sh` を実行して完了するまで待つスクリプト。
 
-## Models のダウンロード
+## Models のダウンロード (Optional)
 
 - CSC のインターネットは少し遅い気がする。
 

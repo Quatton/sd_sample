@@ -8,3 +8,14 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Editor settings
+.vscode/
+.idea/
+.zed/
+
+# Model cache
+.cache/
+
+# Results
+result.*

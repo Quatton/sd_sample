@@ -11,6 +11,7 @@ def main():
         model_name,
         torch_dtype="auto",
         device_map="auto",
+        cache_dir=".cache",
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     print("Model loaded in {:.2f} seconds.".format(time() - time_start))

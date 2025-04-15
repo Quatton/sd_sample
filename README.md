@@ -44,7 +44,7 @@ qtn in 🌐 n17 in .cache/huggingface/hub via 🐍 v3.12.6 (sd-sample)
 models--black-forest-labs--FLUX.1-schnell  models--Qwen--Qwen2.5-7B-Instruct
 
 qtn in 🌐 n17 in .cache/huggingface/hub via 🐍 v3.12.6 (sd-sample)
-❯ scp models--Qwen--Qwen2.5-7B-Instruct qtn@csc:~/.cache/huggingface/hub/
+❯ scp models--Qwen--Qwen2.5-7B-Instruct qtn@csc:sd_sample/.cache # <-- この project の .cache
 ```
 
 (csc が .ssh の config に載っているので、`@csc` でできる。)

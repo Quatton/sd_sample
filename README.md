@@ -52,3 +52,7 @@ qtn in 🌐 n17 in .cache/huggingface/hub via 🐍 v3.12.6 (sd-sample)
 Host csc
   HostName csc.is.s.u-tokyo.ac.jp                                                              User qtn                                                                                     IdentityFile ~/.ssh/id_ed25519
 ```
+
+## Running
+
+`bash scripts/execute.sh` を使ってもいいし、うまくいかない場合は `job.sh` をなんとか schedule して実行する。

@@ -1,17 +1,21 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from time import time
 
 
 def main():
 
     model_name = "Qwen/Qwen2.5-7B-Instruct"
 
+    time_start = time()
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype="auto",
         device_map="auto",
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
+    print("Model loaded in {:.2f} seconds.".format(time() - time_start))
 
+    time_start_generation = time()
     prompt = "Give me a short introduction to large language model."
     messages = [{
         "role":
@@ -36,6 +40,9 @@ def main():
     response = tokenizer.batch_decode(generated_ids,
                                       skip_special_tokens=True)[0]
 
+    print("Generation time: {:.2f} seconds.".format(time() -
+                                                    time_start_generation))
+    print("Total time: {:.2f} seconds.".format(time() - time_start))
     print(response)
 
 
